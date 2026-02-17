@@ -1,0 +1,89 @@
+:root {
+  /* The colors */
+  --MainThemeColor: #54bd95;
+  --MainBgColor: #161c28;
+  --ParagraphColor: #a6a6a6;
+  --FormBgColor: #222938;
+
+  /* The Font */
+  --FontFamily: Inter, sans-serif;
+}
+
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #54bd95 5%, white);
+  font-family: var(--FontFamily);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Global styling */
+
+.form-container {
+  display: flex;
+  color: white;
+}
+
+.form-container-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container-info > p,
+small {
+  color: var(--ParagraphColor);
+}
+
+.form-container {
+  background-color: var(--MainBgColor);
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--FormBgColor);
+}
+
+/* Mobile view */
+
+@media screen and (width < 648px) {
+  /* Form info section */
+  .form-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-container-info {
+    flex-direction: column;
+  }
+
+  .images-of-people {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .quote-svg {
+    width: 2rem;
+  }
+
+  /* Form section */
+  .form {
+    margin: 2rem 0rem;
+  }
+}
