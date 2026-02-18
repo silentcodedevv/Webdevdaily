@@ -27,7 +27,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
 }
 
@@ -41,6 +40,7 @@ img {
 .form-container-info {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .form-container-info > p,
@@ -56,12 +56,72 @@ small {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--FormBgColor);
+  border-radius: 20px;
+  height: 100%;
+}
+
+.form-group-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+textarea {
+  padding-top: 0.7rem;
+  height: 120px;
+  padding-left: 0.7rem;
+}
+
+.form > h2 {
+  margin: 10px 0px;
+}
+
+.form-group > input {
+  height: 40px;
+  padding-left: 0.7rem;
+}
+
+.form-group-container > .form-group:nth-child(2) {
+  margin: 20px 0px;
+}
+
+.form > button {
+  background-color: var(--MainThemeColor);
+  width: 100%;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: 60px;
+  max-width: 600px;
+  cursor: pointer;
+}
+
+.form > button:hover {
+  background-color: #367e62;
+}
+
+.form > small {
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.trial-text {
+  color: white;
+  cursor: pointer;
 }
 
 /* Mobile view */
 
-@media screen and (width < 648px) {
+@media screen and (width < 1265px) {
   /* Form info section */
   .form-container {
     flex-direction: column;
@@ -74,6 +134,7 @@ small {
 
   .images-of-people {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
@@ -85,5 +146,47 @@ small {
   /* Form section */
   .form {
     margin: 2rem 0rem;
+    padding: 0rem 1rem;
+  }
+
+  .currency-logo {
+    width: 4rem;
+  }
+}
+
+/* Desktop styling*/
+@media screen and (width > 1264px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 101px;
+    width: 1439px;
+  }
+
+  .quote-svg {
+    width: 45px;
+    height: 38px;
+    margin: 41px 0px;
+  }
+
+  .images-of-people {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 66px;
+  }
+
+  .form-container-info {
+    width: 466px;
+  }
+
+  .form-container-info > h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .form {
+    width: 612px;
+    padding: 0rem 4rem;
   }
 }
