@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #0062ad -70%, white);
+  font-family: Inter, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbf0dc;
+  height: 609px;
+  width: 458px;
+}
+
+.cookie-monster {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #0062ad;
+  height: 432px;
+  width: 422px;
+  margin-top: 32px;
+}
+
+.eye-container {
+  display: flex;
+  gap: 5px;
+}
+
+.circle {
+  width: 204px;
+  height: 204px;
+  background-color: #fbf0dc;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye-one,
+.eye-two {
+  background-color: black;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eye-one {
+  top: 15px;
+  left: 90px;
+}
+
+.eye-two {
+  top: 45px;
+  left: 130px;
+}
+
+.cookie-text-container {
+  margin: 16px 0px 32px 18px;
+}
+
+.cookie-text-container > h1 {
+  font-size: 64px;
+}
+
+.cookie-text-container > p {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 430px) {
+  .main {
+    height: 409px;
+    width: 258px;
+  }
+
+  .cookie-monster {
+    height: 232px;
+    width: 222px;
+  }
+
+  .circle {
+    width: 104px;
+    height: 104px;
+    background-color: #fbf0dc;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .eye-one {
+    top: 15px;
+    left: 50px;
+  }
+
+  .eye-two {
+    top: 23px;
+    left: 65px;
+  }
+
+  .eye-one,
+  .eye-two {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cookie-text-container > h1 {
+    font-size: 44px;
+  }
+
+  .cookie-text-container > p {
+    font-size: 14px;
+  }
+}
