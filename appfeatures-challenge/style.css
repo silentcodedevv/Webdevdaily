@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, white 1%, #8f8d8d 15%);
+  font-family:
+    Darker Grotesque,
+    sans-serif;
+}
+
+.app-features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f3ec;
+  width: 1600px;
+  height: 905px;
+}
+
+.app-features-container > h1 {
+  font-size: 4rem;
+}
+
+.app-features-container > p {
+  margin-top: 15px;
+  font-size: 1.375rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.card > img {
+  width: 47px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  height: 425px;
+  padding: 0rem 3.4rem;
+  background-color: #eae4dc;
+}
+
+.card > h2 {
+  font-size: 3.5rem;
+  line-height: 0.7;
+  margin-top: 27px;
+  margin-bottom: 10px;
+}
+
+.card > p {
+  margin: 27px 0px;
+}
+
+.partnership-man {
+  background-color: #8f8d8d;
+  color: white;
+}
+
+.card > a {
+  font-weight: bold;
+  font-size: 1.43rem;
+  color: black;
+}
+
+.partnership-man > a {
+  color: white;
+}
+
+@media screen and (max-width: 1195px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-features-container {
+    justify-content: flex-start;
+    text-align: center;
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    align-items: center;
+    width: 280px;
+  }
+}
