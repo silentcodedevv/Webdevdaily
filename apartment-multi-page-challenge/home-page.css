@@ -1,0 +1,70 @@
+/* Mobile view */
+
+@media screen and (max-width: 25.875em) {
+  /* The navigation bar */
+  .apartment-logo {
+    width: 1.5rem;
+  }
+
+  .apartment-text {
+    display: none;
+  }
+
+  header {
+    height: 48px;
+  }
+
+  .nav {
+    display: flex;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .hamburger {
+    width: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* The hero section */
+  .hero-img,
+  .hero-text-container {
+    margin-bottom: 18.6px;
+  }
+
+  .hero-text-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  /* Four image display */
+  .apartment-images-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  /* Find perfect home section */
+  .perfect-home {
+    padding: 1.5rem 0rem;
+    gap: 1rem;
+  }
+
+  .perfect-home > button {
+    margin: 0 auto;
+    height: 45px;
+    width: 227px;
+  }
+
+  /* Designed with mind section */
+  .design-mind {
+    gap: 8px;
+    margin-bottom: 23px;
+  }
+}
