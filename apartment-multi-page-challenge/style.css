@@ -1,0 +1,59 @@
+:root {
+  /* Colors */
+  --White: #fff;
+  --Snow-Flurry: #e9ffd6;
+  --Apple: #0d9f01;
+  --Black: #000;
+
+  /* Font Sizes */
+  --PT-Serif: clamp(1.5rem, 1.0461rem + 1.7544vw, 2.625rem);
+  --Helvetica-Nue-B: clamp(1.25rem, 0.9474rem + 1.1696vw, 2rem);
+  --Helvetica-Nue-R: clamp(0.875rem, 0.6228rem + 0.9747vw, 1.5rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* The hero section */
+.hero-text-container {
+  display: flex;
+}
+
+/* Four image display */
+.apartment-images-container {
+  display: grid;
+  border-bottom: 10px solid var(--Apple);
+}
+
+/* Find perfect home section */
+.perfect-home,
+.design-mind {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.perfect-home > button {
+  border: none;
+  background-color: var(--Apple);
+  color: white;
+  border-radius: 8px;
+  width: 308px;
+  cursor: pointer;
+  height: 64px;
+}
+
+/* Designed with mind section */
+.design-mind {
+  background-color: #f1f1f1;
+}
