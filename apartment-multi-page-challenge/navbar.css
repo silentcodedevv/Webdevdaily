@@ -1,0 +1,135 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0rem 1rem;
+  align-items: center;
+}
+
+/* Navbar section */
+.nav-links li a {
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: clamp(1rem, 0.7982rem + 0.7797vw, 1.5rem);
+  font-weight: 600;
+}
+
+/* Mobile view */
+@media screen and (max-width: 25.875em) {
+  /*Hmburger menu */
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 16px;
+    margin-top: 16px;
+  }
+
+  .hamburger,
+  .close-btn {
+    width: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* The navigation bar */
+  .apartment-logo {
+    width: 1.5rem;
+  }
+
+  .apartment-text {
+    display: none;
+  }
+
+  header {
+    height: 48px;
+    position: relative;
+  }
+
+  .nav-links li a {
+    color: white;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    background-color: var(--Apple);
+    height: 893px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 25.875em) {
+  /* The navigation bar */
+  .apartment-logo {
+    width: 3.3rem;
+  }
+
+  header {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1650px;
+    margin: 0 auto;
+  }
+
+  .nav-links {
+    gap: 64px;
+    color: black;
+  }
+
+  .nav-links a {
+    gap: 64px;
+    color: black;
+  }
+
+  .active {
+    border-bottom: 6px solid var(--Apple);
+  }
+
+  .nav-links a:hover {
+    border-bottom: 6px solid var(--Apple);
+    margin-top: 24px;
+  }
+
+  .apartment-text {
+    font-family: "PT Serif", sans-serif;
+    font-size: clamp(1rem, 0.7982rem + 0.7797vw, 1.5rem);
+    font-weight: 600;
+  }
+
+  .the-apartments-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hamburger,
+  .close-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  header {
+    height: 142px;
+    position: relative;
+  }
+}
+
+/* Custom breakpoint */
+@media screen and (max-width: 53.3125em) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

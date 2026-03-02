@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="home-page.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="navbar.css">
+  <script src="index.js" defer></script>
+  <title>The Apartments</title>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         <img class="apartment-logo" src="assets/The Apartment Logo.png" alt="The Apartment logo">
         <span class="apartment-text">The Apartments</span>
       </section>
-      <svg class="hamburger" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="hamburger" id="hamburger-btn" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
@@ -25,9 +27,18 @@
           <path d="M20 17L4 17" stroke="#0D9F01" stroke-width="1.5" stroke-linecap="round"></path>
         </g>
       </svg>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Amenities</a></li>
+      <ul class="nav-links" id="nav-links">
+        <svg class="close-btn" id="close-btn" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill="#ffffff"
+              d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z">
+            </path>
+          </g>
+        </svg>
+        <li><a class="active" href="/apartment-multi-page-challenge/">Home</a></li>
+        <li><a href="/apartment-multi-page-challenge/amenities/amenities.html">Amenities</a></li>
         <li><a href="#">Floor Plans</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
@@ -48,10 +59,27 @@
       </div>
     </section>
     <section class="apartment-images-container">
-      <img src="assets/Amenities Fit For You.jpg" alt="An image of dumbells"><img src="assets/Spacious Floor Plans.jpg"
-        alt="Image of a living room with kitchen"><img src="assets/City At Your Doorstep.jpg"
-        alt="Image of the city"><img src="assets/Lifestyle For All.jpg"
-        alt="A man sitting in the livving room with his laptop">
+      <div class="amenities-img">
+        <h2 class="amenities-text">Amenities
+          Fit For You</h2>
+        <img src="assets/Amenities Fit For You.jpg" alt="An image of dumbells">
+      </div>
+      <div class="living-room-img">
+        <h2 class="living-room-text">Spacious Floor Plans</h2>
+        <img src="assets/Spacious Floor Plans.jpg" alt="Image of a living room with kitchen">
+      </div>
+      <div class="city-img">
+        <h2 class="city-text">City At
+          Your
+          Doorstep </h2>
+        <img src="assets/City At Your Doorstep.jpg" alt="Image of the city">
+      </div>
+      <div class="lifestyle-img">
+        <h2 class="lifestyle-text">Lifestyle
+          For All</h2>
+        <img src="assets/Lifestyle For All.jpg" alt="A man sitting in the livving room with his laptop">
+      </div>
+
     </section>
     <section class="perfect-home">
       <h2>Find Your Prefect Home</h2>
@@ -59,20 +87,35 @@
         studio, one, and two-bedroom apartments, you’re sure to find the perfect home to call your own.</p>
       <button>View Our Floor Plans</button>
     </section>
-    <section class="design-mind">
-      <h2>Designed With You In Mind</h2>
-      <p>Explore the downtown area that surrounds our property, grill and chill with family and friends in the comfort
-        of your own home. At The Apartments, you have the best of all worlds.</p>
-      <div class="design-mind-images">
-        <img src="assets/Pet Friendly.jpg" alt="A friendly cat"><img src="assets/Thoughtful Amenities.jpg"
-          alt="kitchen room"><img src="assets/Exceptional Service.jpg" alt="A lady on her phone and laptop">
-      </div>
+    <section class="background-clr">
+      <section class="design-mind">
+        <h2>Designed With You In Mind</h2>
+        <p>Explore the downtown area that surrounds our property, grill and chill with family and friends in the comfort
+          of your own home. At The Apartments, you have the best of all worlds.</p>
+        <div class="design-mind-images">
+          <div class="pet-friendly-img">
+            <h2 class="pet-friendly-text">Pet friendly</h2>
+            <img src="assets/Pet Friendly.jpg" alt="A friendly cat">
+          </div>
+          <div class="kitchen-room-img">
+            <h2 class="kitchen-room-text">Thoughtful kitchen</h2><img src="assets/Thoughtful Amenities.jpg"
+              alt="kitchen room">
+          </div>
+          <div class="exceptional-service-img">
+            <h2 class="exceptional-service-text">Exceptional service</h2>
+            <img src="assets/Exceptional Service.jpg" alt="A lady on her phone and laptop">
+          </div>
+
+        </div>
+      </section>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="contact-us">
-      <h3></h3>
-      <span>The apartments</span><span>1234 Apartment Dr.</span>New York, NY 95832<span></span>
+      <h3>Contact us</h3>
+      <span>The apartments</span>
+      <span>1234 Apartment Dr.</span>
+      <span>New York, NY 95832</span>
     </div>
     <div class="office-hours">
       <h3>Office Hours</h3>

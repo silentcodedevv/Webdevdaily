@@ -1,0 +1,54 @@
+.amenities-hero-img {
+  background-image: url("assets/Spacious\ Floor\ Plans.jpg");
+  background: no-repeat;
+  margin: 0 auto;
+  height: 708px;
+  width: 100%;
+  max-width: 1920px;
+  object-fit: cover;
+  object-position: 70% 60%;
+  border-bottom: 10px solid var(--Apple);
+}
+
+.amenities-text-section {
+  margin: 0 auto;
+  max-width: 1638px;
+}
+
+.amenities-text-section p {
+  font-size: clamp(0.875rem, 0.6228rem + 0.9747vw, 1.5rem);
+}
+
+@media screen and (max-width: 25em) {
+  .amenities-hero-img {
+    height: 180px;
+  }
+
+  .amenities-text-section {
+    margin: 24px 0px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .amenities-text-section p {
+    margin: 18px 0px;
+    text-align: left;
+  }
+
+  .amenities-text-section ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .li-seperator {
+    margin-bottom: 8px;
+  }
+
+  .amenities-text-section img {
+    margin: 24px 0px;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 25.875em) {
+}

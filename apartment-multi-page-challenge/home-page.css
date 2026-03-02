@@ -1,13 +1,8 @@
 /* Mobile view */
-
 @media screen and (max-width: 25.875em) {
   /* The navigation bar */
   .apartment-logo {
     width: 1.5rem;
-  }
-
-  .apartment-text {
-    display: none;
   }
 
   header {
@@ -37,6 +32,10 @@
     margin-bottom: 18.6px;
   }
 
+  .apartment-images-container h2 {
+    display: none;
+  }
+
   .hero-text-container {
     flex-direction: column;
     text-align: center;
@@ -54,6 +53,8 @@
   .perfect-home {
     padding: 1.5rem 0rem;
     gap: 1rem;
+    padding: 0rem 1rem;
+    margin: 24px 0px;
   }
 
   .perfect-home > button {
@@ -66,5 +67,125 @@
   .design-mind {
     gap: 8px;
     margin-bottom: 23px;
+    padding: 24px 16px;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 25.875em) {
+  .hero-container img {
+    width: 1292px;
+    height: 853px;
+    object-fit: cover;
+    object-position: 20% 85%;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    max-width: 777px;
+    text-align: left;
+    left: 0;
+  }
+
+  .hero-text-container h1 {
+    margin-left: 88px;
+  }
+
+  .hero-text-container p {
+    background-color: var(--Apple);
+    color: white;
+    padding: 24px 0px 24px 88px;
+  }
+
+  .apartment-images-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 81px 0px;
+  }
+
+  .amenities-img,
+  .living-room-img,
+  .city-img,
+  .lifestyle-img,
+  .pet-friendly-img,
+  .kitchen-room-img,
+  .exceptional-service-img {
+    position: relative;
+  }
+
+  .amenities-text,
+  .living-room-text,
+  .city-text,
+  .lifestyle-text,
+  .pet-friendly-text,
+  .kitchen-room-text,
+  .exceptional-service-text {
+    text-align: left;
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 10px solid var(--Apple);
+    bottom: 30px;
+    right: 40px;
+    max-width: 133px;
+    padding-bottom: 24px;
+  }
+
+  .perfect-home {
+    margin: 0 auto;
+  }
+
+  .perfect-home,
+  .design-mind {
+    display: flex;
+    align-items: center;
+    max-width: 1132px;
+  }
+
+  .perfect-home p,
+  .design-mind p {
+    margin: 24px 0px;
+  }
+
+  .perfect-home button {
+    max-width: 308px;
+    font-size: 1.5rem;
+    font-family: "PT Serif", sans-serif;
+    font-weight: 600;
+  }
+
+  .background-clr {
+    background-color: var(#f1f1f1);
+    margin-top: 84px;
+    padding-bottom: 80px;
+  }
+
+  .design-mind {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 80px;
+    max-width: 1516px;
+  }
+
+  .design-mind-images img {
+    height: 420px;
+    width: 420px;
+    object-fit: cover;
+  }
+
+  .design-mind-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 128px;
+    justify-content: center;
   }
 }
