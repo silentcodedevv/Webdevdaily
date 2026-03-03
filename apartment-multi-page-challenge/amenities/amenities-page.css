@@ -1,13 +1,9 @@
 .amenities-hero-img {
-  background-image: url("assets/Spacious\ Floor\ Plans.jpg");
-  background: no-repeat;
-  margin: 0 auto;
-  height: 708px;
   width: 100%;
-  max-width: 1920px;
   object-fit: cover;
   object-position: 70% 60%;
   border-bottom: 10px solid var(--Apple);
+  margin: 0 auto;
 }
 
 .amenities-text-section {
@@ -19,7 +15,12 @@
   font-size: clamp(0.875rem, 0.6228rem + 0.9747vw, 1.5rem);
 }
 
-@media screen and (max-width: 25em) {
+.bold-text {
+  font-weight: 700;
+}
+
+/* Mobile */
+@media screen and (max-width: 59.875em) {
   .amenities-hero-img {
     height: 180px;
   }
@@ -27,7 +28,7 @@
   .amenities-text-section {
     margin: 24px 0px;
     text-align: center;
-    padding: 1rem;
+    padding: 0rem 1rem;
   }
 
   .amenities-text-section p {
@@ -47,8 +48,103 @@
   .amenities-text-section img {
     margin: 24px 0px;
   }
+
+  .pet-policy-section h1,
+  .pet-policy-section h2 {
+    text-align: center;
+  }
+
+  .pet-policy-section h1 {
+    padding-top: 24px;
+  }
+
+  .pet-policy-section h2 {
+    margin: 13px 0px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .pet-policy-section ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    list-style: none;
+  }
+
+  .pet-img {
+    margin: 24px 0px;
+  }
 }
 
 /* Desktop view */
-@media screen and (min-width: 25.875em) {
+@media screen and (min-width: 59.875em) {
+  .amenities-hero-img {
+    height: 608px;
+    max-width: 1920px;
+  }
+
+  .amenities-text-section {
+    padding: 0rem 2rem;
+  }
+
+  .amenities-first-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 22px;
+  }
+
+  .amenities-second-section {
+    display: flex;
+    gap: 186px;
+    margin: 24px 0px 80px 0px;
+  }
+
+  .amenities-img {
+    width: 637px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .li-seperator {
+    margin-bottom: 16px;
+  }
+
+  .pet-img {
+    width: 704px;
+    height: 397px;
+    object-fit: cover;
+  }
+
+  .pet-policy-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 66px;
+    padding: 80px 0px;
+    max-width: 1538px;
+    margin: 0 auto;
+  }
+
+  .pet-policy-section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 32px;
+  }
+
+  .pet-policy-section h2 {
+    font-size: 40px;
+  }
+
+  .pet-policy-section h2 {
+    margin: 16px 0px;
+    font-weight: 400;
+    font-size: 36px;
+  }
+
+  .bold-text {
+    font-weight: 400;
+  }
 }
