@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1e2939, #d9d9d9);
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #1e2939;
+  color: #99a1af;
+  border-radius: 14px;
+  max-width: 448px;
+  padding: 0px 32px;
+}
+
+.check-circle {
+  background-color: #0d542b;
+  border-radius: 999px;
+  padding: 1rem;
+  margin: 32px 0px 24px 0px;
+}
+
+.p-successful-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main h1 {
+  color: #05df72;
+  margin-bottom: 8px;
+}
+
+.purchase-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #364153;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.line {
+  background-color: #4a5565;
+  width: 100%;
+  height: 1px;
+}
+
+.purchase-info-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transction-id {
+  padding: 2px 9px;
+  border: 1px solid #4a5565;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.black-white-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 40px auto;
+  width: 100%;
+}
+
+.buttons > button:first-child {
+  background-color: #1c398e;
+  color: #d1d5dc;
+  margin-bottom: 24px;
+}
+
+.buttons > div button:first-child {
+  background-color: black;
+  color: white;
+}
+
+small {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
