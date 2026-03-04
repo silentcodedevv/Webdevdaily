@@ -44,6 +44,10 @@ span {
   font-weight: 300;
 }
 
+small {
+  font-family: "Poppins", sans-serif;
+}
+
 img {
   display: block;
   max-width: 100%;
