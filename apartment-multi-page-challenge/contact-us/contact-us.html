@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/apartment-multi-page-challenge/style.css">
   <link rel="stylesheet" href="/apartment-multi-page-challenge/navbar.css">
-  <link rel="stylesheet" href="floor-plan.css">
+  <link rel="stylesheet" href="contact-us.css">
   <script src="/apartment-multi-page-challenge/index.js" defer></script>
-  <title>Amenities</title>
+  <title>Contact us</title>
 </head>
 
 <body>
@@ -39,55 +39,47 @@
           </g>
         </svg>
         <li><a href="/apartment-multi-page-challenge/index.html">Home</a></li>
-        <li><a href="/apartment-multi-page-challenge/amenities/amenities.html">Amenities</a></li>
+        <li><a href="/Amenities/apartment-multi-page-challenge/amenities.html">Amenities</a></li>
         <li><a class="active" href="/apartment-multi-page-challenge/floor-plan/floor-plan.html">Floor Plans</a></li>
-        <li><a href="/apartment-multi-page-challenge/contact-us/contact-us.html">Contact Us</a></li>
+        <li><a a class="active" href="/apartment-multi-page-challenge/contact-us/contact-us.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="floor-plan-img-container"> <img class="floor-plan-img"
-        src="/apartment-multi-page-challenge/assets/Floor Plan Hero.jpg" alt="floor plan"></section>
-    <section class="studio-section">
-      <div class="studio-text-container">
-        <h1>Studio, 1 & 2 Bedroom
-          Apartments</h1>
-        <p>The Apartments creates a homey and friendly atmosphere with perfectly finished amenity spaces. Inside each
-          pet-friendly apartment unit, you’ll enjoy fully equipped kitchens, floor-to-ceiling windows with spectacular
-          views, and spacious closets. When it comes to designing the perfect apartments, The Apartment strives to meet
-          everything on your must-have list. Take a virtual tour from anywhere and contact our leasing office to learn
-          more about our apartment community. Schedule a tour and lease your new apartment at The Apartment. Our
-          friendly, professional staff will be happy to assist you in showing off our lovely property!</p>
-        <p>Explore our floor plans and apply today or schedule a tour. Our wonderful Pavilion team will be happy to
-          assist you in showing off our lovely apartments for rent!</p>
-        <span class="line-one"></span>
-      </div>
-    </section>
-    <section class="floor-plan-selection">
-      <div>
-        <ul class="floorplan-text-container">
-          <li>Studio</li>
-          <li>One</li>
-          <li>Two</li>
+    <img class="city-landscape-img" src="/apartment-multi-page-challenge/assets/City At Your Doorstep.jpg"
+      alt="city landscape with skyscrapers">
+    <section class="contact-us">
+      <h1>Contact Us</h1>
+      <div class="contact-us-container">
+        <ul class="contact-info">
+          <li>(123)456-7890</li>
+          <li>info@theapartments.com</li>
+          <li>The Apartments 12354 Apartment Dr. New York, NY 95832</li>
         </ul>
+        <span class="line"></span>
+        <p>Please complete the information below, and we will contact you right away!</p>
       </div>
-
-      <div class="studio-text-container">
-        <div class="studio-img-container">
-          <h2>Dummy text</h2>
-          <small>Availability</small>
-          <img src="/apartment-multi-page-challenge/assets/Sudio.jpg" alt="floor plan">
-          <ul class="studio-list-tags">
-            <li>Bed: 1</li>
-            <li>Bath: 1</li>
-            <li>Sq. Ft.: 705-855</li>
-            <li>Rent: $1,263-$1,763</li>
-          </ul>
-          <button class="availability">Availability</button>
+      <form action="#">
+        <small>* indicates required fields.</small>
+        <div class="form group"> <label class="sr-only" for="firstName">First Name</label>
+          <input type="name" name="firstname" id="firstname" placeholder="First Name*" required>
         </div>
-
-
-      </div>
+        <div class="form group"> <label class="sr-only" for="lastname">Last Name</label>
+          <input type="name" name="lastname" id="lastname" placeholder="Last Name*" required>
+        </div>
+        <div class="form group"> <label class="sr-only" for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email*" required>
+        </div>
+        <div class="form group"> <label class="sr-only" for="phonenumber">Phone Number</label>
+          <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone Number*" required>
+        </div>
+        <label class="checkbox" for="checkbox">
+          <input type="checkbox" id="checkbox">
+          Yes, I'd be happy to receive text messages!
+        </label>
+        <textarea name="message" id="message" placeholder="Message*"></textarea>
+        <button class="send-message">Send My Message</button>
+      </form>
     </section>
   </main>
   <footer class="footer">

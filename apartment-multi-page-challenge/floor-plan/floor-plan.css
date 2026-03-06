@@ -125,12 +125,11 @@
   }
 
   .studio-img-container img {
-    height: 608px;
     max-width: 1920px;
   }
 
   .floor-plan-img-container img {
-    height: 1200px;
+    height: 608px;
     margin: 0 auto;
     width: 100%;
   }
@@ -151,5 +150,6 @@
 
   .studio-text-container {
     position: relative;
+    margin: 76px 0px 134px 0px;
   }
 }

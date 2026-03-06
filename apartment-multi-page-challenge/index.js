@@ -10,7 +10,20 @@ function hamburgerBtnFunction() {
   hamburgerMenu.style.display = "flex";
 }
 
-
 closeBtn.addEventListener("click", closeBtnFunction);
-
 hamburgerBtn.addEventListener("click", hamburgerBtnFunction);
+
+const mediaQuery = window.matchMedia("(max-width: 414px)");
+
+function handleNavBar(e) {
+  if (e.matches) {
+    closeBtnFunction();
+  } else {
+    hamburgerBtnFunction();
+  }
+}
+
+mediaQuery.addEventListener("change", handleNavBar);
+
+
+handleNavBar(mediaQuery);

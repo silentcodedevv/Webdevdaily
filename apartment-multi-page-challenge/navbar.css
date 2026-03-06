@@ -126,10 +126,17 @@
 }
 
 /* Custom breakpoint */
-@media screen and (max-width: 53.3125em) {
+@media screen and (max-width: 26.06em) {
   .nav {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 26.06em) {
+  .nav {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }
