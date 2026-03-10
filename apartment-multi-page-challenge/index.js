@@ -13,7 +13,7 @@ function hamburgerBtnFunction() {
 closeBtn.addEventListener("click", closeBtnFunction);
 hamburgerBtn.addEventListener("click", hamburgerBtnFunction);
 
-const mediaQuery = window.matchMedia("(max-width: 414px)");
+const mediaQuery = window.matchMedia("(max-width: 958px)");
 
 function handleNavBar(e) {
   if (e.matches) {

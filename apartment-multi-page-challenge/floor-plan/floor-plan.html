@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="/apartment-multi-page-challenge/navbar.css">
   <link rel="stylesheet" href="floor-plan.css">
   <script src="/apartment-multi-page-challenge/index.js" defer></script>
+  <script src="index.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
   <title>Amenities</title>
 </head>
 
@@ -66,14 +71,14 @@
     <section class="floor-plan-selection">
       <ul class="floorplan-text-container">
         <div class="floorplan-text-two">
-          <li>
-            <span>Studio</span>
+          <li id="studio-btn">
+            <span id="studio-li-text">Studio</span>
           </li>
-          <li>
-            <span>One Bedroom</span>
+          <li id="one-bedroom-btn">
+            <span id="">One Bedroom</span>
           </li>
-          <li>
-            <span>Two Bedroom</span>
+          <li id="two-bedroom-btn">
+            <span id="">Two Bedroom</span>
           </li>
         </div>
       </ul>
@@ -82,19 +87,19 @@
         <div class="floorplan-details-container">
 
           <ul class="studio-list-tags">
-            <h2>One Bedroom</h2>
+            <h2 id="title-selection">Select room</h2>
             <small>5 Available</small>
             <div class="li-space">
-              <li>Bed: 1</li>
-              <li>Bath: 1</li>
-              <li>Sq. Ft.: 705-855</li>
-              <li>Rent: $1,263-$1,763</li>
+              <li>Bed: <span id="bed-selection"></span></li>
+              <li>Bath: <span id="bath-selection"></span></li>
+              <li>Sq. Ft.: <span id="sq-selection"></span></li>
+              <li>Rent: <span id="rent-selection"></span></li>
             </div>
             <button class="availability">Availability</button>
           </ul>
         </div>
       </div>
-      <img src="/apartment-multi-page-challenge/assets/Sudio.jpg" alt="floor plan">
+      <img id="img-selection" src="/apartment-multi-page-challenge/assets/Sudio.jpg" alt="plan image selection">
       </div>
       </div>
     </section>
