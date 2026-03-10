@@ -15,7 +15,7 @@ function studioBtnChange() {
   bathSelection.innerText = "1";
   sqSelection.innerText = "540-590";
   rentSelection.innerText = "$874-$1,238";
-  imgSelection.src = "/apartment-multi-page-challenge/assets/Sudio.jpg";
+  imgSelection.src = "../assets/Sudio.jpg";
 }
 
 function oneBedroomChange() {
@@ -24,7 +24,7 @@ function oneBedroomChange() {
   bathSelection.innerText = "1";
   sqSelection.innerText = "705-855";
   rentSelection.innerText = "$1,263-$1,763";
-  imgSelection.src = "/apartment-multi-page-challenge/assets/One Bedroom.jpg";
+  imgSelection.src = "../assets/One Bedroom.jpg";
 }
 
 function twoBedroomChange() {
@@ -33,7 +33,7 @@ function twoBedroomChange() {
   bathSelection.innerText = "1";
   sqSelection.innerText = "1,140";
   rentSelection.innerText = "$1,577-$2,107";
-  imgSelection.src = "/apartment-multi-page-challenge/assets/Two Bedrooms.jpg";
+  imgSelection.src = "../assets/Two Bedrooms.jpg";
 }
 
 
