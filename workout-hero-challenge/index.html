@@ -10,15 +10,14 @@
 
 <body class="flex justify-center min-h-screen relative sm:items-center font-signika overflow-x-hidden">
   <header id="hamburger-menu-btn"
-    class="flex-col h-full justify-start top-0 left-0  items-center px-0 sm:flex sm:flex-row sm:justify-between  sm:absolute sm:px-16 sm:h-12 sm:mt-9 sm:w-full z-10">
-    <a href="#" class="cursor-pointer"><img id="logo" class="mx-auto w-28 mt-30 hidden sm:flex sm:mt-0"
-        src="images/Vector.png" alt="FitGuru logo"></a>
+    class="flex-col h-full justify-start top-0 left-0 items-center px-0 sm:flex sm:flex-row sm:justify-between sm:absolute sm:px-16 sm:h-12 sm:mt-9 sm:w-full z-10">
+    <a href="#" class="cursor-pointer">
+      <img id="logo" class="mx-auto w-28 mt-30 hidden sm:flex sm:mt-0" src="images/Vector.png" alt="FitGuru logo">
+    </a>
     <img id="hamburger-btn" class="absolute cursor-pointer w-8 top-5 right-5 sm:hidden"
       src="images/hamburger-svgrepo-com (1).svg" alt="hamburger icon">
     <svg id="exit-btn" class="hidden absolute cursor-pointer w-8 top-5 right-5 sm:hidden" viewBox="0 0 1024 1024"
       xmlns="http://www.w3.org/2000/svg" fill="#000000">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
         <path fill="#000000"
           d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z">
@@ -40,20 +39,23 @@
       class="text-1xl py-5 w-32 h-12 bg-black rounded-2xl text-white items-center justify-center cursor-pointer hidden sm:flex">Join
       Now</button>
   </header>
-  <main class="flex min-h-screen">
-    <aside class="flex-2 bg-white sm:px-14 mt-36">
+
+  <main id="main" class="flex min-h-screen w-full">
+    <aside id="first-aside" class="flex-2 bg-white mt-2 min-h-screen sm:px-14 ">
       <section
-        class="elevate-container px-2 flex flex-col items-center text-center mt-20 gap-2.5 sm:items-start sm:text-left">
-        <a href="#" class="cursor-pointer"><img id="logo" class="w-24 sm:hidden" src="images/Vector.png"
-            alt="FitGuru logo"></a>
-        <h1 class="text-6xl font-bold">Elevate Your Workout</h1>
-        <p class="text-gray-500 text-2xl">FitGuru is your ultimate fitness companion, offering
-          personalized workout
-          plans, expert
-          guidance, and a
+        class="elevate-container px-2 flex flex-col items-center text-center mt-20 gap-2.5 sm:mt-40 sm:gap-10 sm:items-start sm:text-left">
+        <a href="#" class="cursor-pointer">
+          <img id="logo" class="w-24 sm:hidden" src="images/Vector.png" alt="FitGuru logo">
+        </a>
+        <h1 class="text-2xl sm:text-6xl font-bold">Elevate Your Workout</h1>
+
+        <p class="text-gray-500 text-1xl sm:text-3xl max-w-[648px]">
+          FitGuru is your ultimate fitness companion, offering personalized workout plans, expert guidance, and a
           supportive community. Elevate your fitness journey and achieve your goals with tailored routines and progress
-          tracking. Start your path to a stronger you today!</p>
-        <div class="btn-container-hero flex flex-col gap-2 cursor-pointer mt-4 sm:flex-row items-center">
+          tracking. Start your path to a stronger you today!
+        </p>
+
+        <div class="btn-container-hero flex flex-col items-center gap-10 cursor-pointer mt-4 sm:flex-row">
           <button
             class="get-started text-1xl font-semibold py-5 w-32 h-12 bg-black rounded-2xl text-white flex items-center justify-center">Get
             Started</button>
@@ -62,18 +64,20 @@
             <p>Play video</p>
           </div>
         </div>
-        <div class="socials flex w-6 gap-3 mt-4 cursor-pointer"><img src="images/facebook-02.png"
-            alt="facebook icon"><img src="images/instagram.png" alt="instagram icon"><img src="images/linkedin-02.png"
-            alt="linkedin icon"><img src="images/github.png" alt="github icon">
+        <div class="socials flex w-6 gap-3 mt-4 cursor-pointer justify-center sm:justify-start sm:w-12">
+          <img src="images/facebook-02.png" alt="facebook icon">
+          <img src="images/instagram.png" alt="instagram icon">
+          <img src="images/linkedin-02.png" alt="linkedin icon">
+          <img src="images/github.png" alt="github icon">
         </div>
       </section>
       <img class="sm:hidden" src="images/hero-img.png" alt="hero img">
     </aside>
-    <aside class="flex-0 sm:flex-1 bg-gray-900 hidden sm:flex sm:relative">
-      <img class="sm:absolute sm:bottom-0 sm:right-30" src="images/hero-img.png" alt="hero img">
+
+    <aside id="second-aside" class="flex-0 sm:flex-1 bg-gray-900 hidden sm:flex sm:relative">
+      <img class=" sm:absolute sm:bottom-0 sm:right-30" src="images/hero-img.png" alt="hero img">
     </aside>
   </main>
-
 </body>
 
 </html>
