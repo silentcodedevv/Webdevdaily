@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-whitegrey: #dadbdd;
+  --h-headphones: 686px;
+  --w-headphones: 590px;
+}
