@@ -9,7 +9,7 @@
 
 <body class="min-h-screen bg-whitegrey flex justify-center items-center">
   <article
-    class="flex product-container max-w-[1440px] bg-white rounded-2xl px-32  h-full py-44 sm:max-h-[900px] sm:flex-row sm:items-center ">
+    class="flex flex-col product-container md:max-w-[1440px] bg-white rounded-2xl px-10 md:px-32  h-full py-44 md:max-h-[900px] md:flex-row md:items-center ">
     <div class="product-img-container">
       <img class="max-w-full w-(--w-headphones)" src="images/product-headphones.png" alt="Headphones">
     </div>
@@ -23,29 +23,33 @@
       </div>
       <ul
         class="flex flex-col border-solid border-2 border-brown/90 rounded-sm bg-lightorange/10 font-roboto text-sm font-bold text-textbrown mt-20 mb-11">
-        <li class="flex justify-between px-4 py-3 border-b-2 border-brown/90">
+        <li class="flex flex-col md:flex-row justify-between px-4 py-3 border-b-2 border-brown/90">
           <span>Material</span><span>Plastic</span>
         </li>
-        <li class="flex justify-between px-4 py-3 "><span>Included
+        <li class="flex flex-col md:flex-row justify-between px-4 py-3 "><span>Included
             Components</span><span>Ear Cushions, Headband</span>
         </li>
-        <li class="flex justify-between px-4 py-3 border-t-2 border-brown/90 "><span>Dimensions</span><span>18.21 x
+        <li class="flex flex-col md:flex-row justify-between px-4 py-3 border-t-2 border-brown/90 ">
+          <span>Dimensions</span><span>18.21 x
             7.57 x 20.98 cm; 236 g</span>
         </li>
       </ul>
-      <div class="buttons">
-        <div class="amount-btn">
-          <button>+</button>
-          <div>1</div><button>-</button>
+      <div class="buttons flex flex-col items-center md:items-start md:flex-row justify-between md:justify-start gap-5">
+        <div
+          class="amount-btn rounded-4xl border-black/30 flex items-center justify-around max-w-40.5 w-full border-2 font-bold h-16">
+          <button class="border-r h-full border-black/30 pr-4 cursor-pointer">+</button>
+          <div>1</div>
+          <button class=" border-l h-full border-black/30 pl-4 cursor-pointer">-</button>
         </div>
-        <div class="buy-now-cta">
-          <a href=""></a>
-          <span>$399</span>
+        <div
+          class="buy-now-cta border-2 border-brown/70 bg-lightorange/10 max-w-[245px] w-full h-16 rounded-4xl flex items-center justify-around text-brown font-roboto">
+          <a href="#">Buy now for</a>
+          <span class="border-l border-customorange h-full flex items-center pl-4">$399</span>
         </div>
       </div>
-      <div>
-        <div class="circle"></div>
-        <small>360 view</small>
+      <div class="mt-20.5 flex items-center">
+        <div class="circle rounded-full w-11.25  h-11.25 bg-customorange mr-2"></div>
+        <small class="flex items-center gap-2"><img src="images/Icon.png" alt="rotate icon">360 view</small>
       </div>
     </div>
   </article>
