@@ -5,15 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <script src="main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-whitegrey flex justify-center items-center">
   <article
     class="flex flex-col product-container md:max-w-[1440px] bg-white rounded-2xl px-10 md:px-32  h-full py-44 md:max-h-[900px] md:flex-row md:items-center ">
-    <div class="product-img-container">
+    <div id="success-page" class="flex flex-col items-center justify-center">
+      <h1 class="text-3xl text-green-500">You have successfully bought this product</h1>
+      <p id="return-btn" class="text-2xl cursor-pointer">
+        < Return to product</p>
+          <p class="text-2xl" id="total-amount"></p>
+          <p class="text-2xl" id="total-sum"></p>
+    </div>
+    <div id="product-img" class="product-img-container">
       <img class="max-w-full w-(--w-headphones)" src="images/product-headphones.png" alt="Headphones">
     </div>
-    <div class="product-info-container max-w-[520px] w-full">
+    <div id="product-container" class="product-info-container max-w-[520px] w-full">
       <div class="product-info">
         <small class="font-poppins tracking-[2px] text-[14px]">HEADPHONES</small>
         <h1 class="font-poppins tracking-[-2px] text-4xl mb-3">Bevel Over</h1>
@@ -37,14 +45,14 @@
       <div class="buttons flex flex-col items-center md:items-start md:flex-row justify-between md:justify-start gap-5">
         <div
           class="amount-btn rounded-4xl border-black/30 flex items-center justify-around max-w-40.5 w-full border-2 font-bold h-16">
-          <button class="border-r h-full border-black/30 pr-4 cursor-pointer">+</button>
-          <div>1</div>
-          <button class=" border-l h-full border-black/30 pl-4 cursor-pointer">-</button>
+          <button id="increment-btn" class="border-r h-full border-black/30 pr-4 cursor-pointer">+</button>
+          <div id="product-amount"></div>
+          <button id="decrement-btn" class=" border-l h-full border-black/30 pl-4 cursor-pointer">-</button>
         </div>
-        <div
+        <div id="buy-now-cta"
           class="buy-now-cta border-2 border-brown/70 bg-lightorange/10 max-w-[245px] w-full h-16 rounded-4xl flex items-center justify-around text-brown font-roboto">
           <a href="#">Buy now for</a>
-          <span class="border-l border-customorange h-full flex items-center pl-4">$399</span>
+          <span id="product-sum" class="border-l border-customorange h-full flex items-center pl-4"></span>
         </div>
       </div>
       <div class="mt-20.5 flex items-center">
